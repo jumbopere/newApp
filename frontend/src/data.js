@@ -27,16 +27,19 @@ export const sliderItems = [
       id: 1,
       img: "https://i.pinimg.com/474x/c3/7a/93/c37a932cbd15af3270076c888552587e.jpg",
       title: "SUV",
+      cat: "men"
     },
     {
       id: 2,
       img: "https://i.pinimg.com/474x/bb/0b/32/bb0b323f4ed9b28c8ed2f9fcee4117a5.jpg",
       title: "NORMAL",
+      cat: "women"
     },
     {
       id: 3,
       img: "https://i.pinimg.com/474x/eb/df/77/ebdf77b0d4ffa633f1440a01a85bf658.jpg",
       title: "LUXURY",
+      cat: "jean"
     },
   ];
 

@@ -1,4 +1,5 @@
 import createPayment from "../controllers/stripe"
+import { verifyToken} from "../controllers/verifyToken"
 
 module.exports = (express)=> {
     const router = express.Router()

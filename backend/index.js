@@ -3,7 +3,7 @@ import cors from 'cors';
 import {json, urlencoded} from 'body-parser';
 import mongoose from "mongoose";
 import dotenv from 'dotenv';
-import {userRoute, productRoute, cartRoute, orderRoute} from './routes/index.js';
+import {userRoute, productRoute, cartRoute, orderRoute, paymentRoute} from './routes/index.js';
 
 
 dotenv.config();
@@ -21,6 +21,7 @@ app.use('/users', userRoute(express));
 app.use('/products', productRoute(express));
 app.use('/carts', cartRoute(express));
 app.use('/orders', orderRoute(express));
+app.use('/payment', paymentRoute(express));
 app.get("/api/test", (req, res) => {
     res.send("test")
 })

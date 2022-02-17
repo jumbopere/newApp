@@ -6,6 +6,7 @@ import {
   import styled from "styled-components";
   import { Link } from "react-router-dom";
   
+  
   const Info = styled.div`
     opacity: 0;
     width: 100%;
@@ -48,6 +49,7 @@ import {
   const Image = styled.img`
     height: 75%;
     z-index: 2;
+    width: 95%;
   `;
   
   const Icon = styled.div`
@@ -67,13 +69,17 @@ import {
   `;
   
   const Product = ({ item }) => {
+  
+  
     return (
       <Container>
         <Circle />
         <Image src={item.img} />
         <Info>
           <Icon>
+            <Link to = { `/product/${item._id}`}>
             <ShoppingCartOutlined />
+            </Link>
           </Icon>
           <Icon>
             <Link to = { `/product/${item._id}`}>
